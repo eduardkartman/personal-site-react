@@ -123,14 +123,14 @@ function Navbar() {
                 rotate: isOpen ? 45 : 0,
                 y: isOpen ? 8 : 0,
               }}
-              className="block h-0.5 w-6 bg-white"
+              className="block h-0.5 w-6 bg-black/70"
             />
 
             <motion.span
               animate={{
                 opacity: isOpen ? 0 : 1,
               }}
-              className="block h-0.5 w-6 bg-white"
+              className="block h-0.5 w-6 bg-black/70"
             />
 
             <motion.span
@@ -138,7 +138,7 @@ function Navbar() {
                 rotate: isOpen ? -45 : 0,
                 y: isOpen ? -8 : 0,
               }}
-              className="block h-0.5 w-6 bg-white"
+              className="block h-0.5 w-6 bg-black/70"
             />
           </button>
         </div>
