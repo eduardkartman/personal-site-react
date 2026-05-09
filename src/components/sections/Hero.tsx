@@ -81,15 +81,20 @@ function Hero() {
               {/* BUTTONS */}
               <div className="mt-12 flex flex-wrap gap-4">
                 <Button href="/eduard-resume.pdf">Download CV</Button>
-                <Button variant="secondary">Contact Me</Button>
                 <Button
-                  href="https://learn.microsoft.com/en-us/users/eduardkartman-0637/credentials/fa3190dc4a253fa4"
+                  variant="secondary"
+                  href="mailto:eduard.kartman10@gmail.com"
+                >
+                  Contact Me
+                </Button>
+                <Button
+                  href="https://learn.microsoft.com/en-us/users/eduardkartman-0637/credentials/3e970851ba0d31b0"
                   variant="secondary"
                 >
                   Microsoft AZ-204
                 </Button>
                 <Button
-                  href="https://learn.microsoft.com/en-us/users/eduardkartman-0637/credentials/3e970851ba0d31b0"
+                  href="https://learn.microsoft.com/en-us/users/eduardkartman-0637/credentials/fa3190dc4a253fa4"
                   variant="secondary"
                 >
                   Microsoft AZ-104
@@ -99,7 +104,7 @@ function Hero() {
               {/* SOCIALS */}
               <div className="mt-12 flex items-center gap-8">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/eduardkartman"
                   target="_blank"
                   rel="noreferrer"
                   className="group relative text-xs font-semibold tracking-[0.25em] text-black/40 uppercase transition-colors hover:text-black"
@@ -109,7 +114,7 @@ function Hero() {
                 </a>
 
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/eduardkartman/"
                   target="_blank"
                   rel="noreferrer"
                   className="group relative text-xs font-semibold tracking-[0.25em] text-black/40 uppercase transition-colors hover:text-black"

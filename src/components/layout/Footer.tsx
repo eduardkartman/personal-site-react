@@ -1,14 +1,17 @@
 function Footer() {
   return (
-    <footer className="border-t border-slate-800 py-8">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-slate-500 md:flex-row md:px-10 lg:px-16">
-        <p>© 2026 Eduard Kartman. All rights reserved.</p>
+    <footer className="border-t border-black/10 py-8">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm md:flex-row md:px-10 lg:px-16">
+        <p className="text-black/50">
+          © 2026 Eduard Kartman. All rights reserved.
+        </p>
 
         <div className="flex items-center gap-6">
           <a
             href="https://github.com/eduardkartman"
             target="_blank"
-            className="transition-colors hover:text-white"
+            rel="noopener noreferrer"
+            className="text-black/45 transition-all duration-300 hover:-translate-y-0.5 hover:text-black"
           >
             GitHub
           </a>
@@ -16,7 +19,8 @@ function Footer() {
           <a
             href="https://linkedin.com/in/eduardkartman"
             target="_blank"
-            className="transition-colors hover:text-white"
+            rel="noopener noreferrer"
+            className="text-black/45 transition-all duration-300 hover:-translate-y-0.5 hover:text-black"
           >
             LinkedIn
           </a>

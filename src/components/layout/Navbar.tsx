@@ -23,36 +23,36 @@ const navItems = [
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("#about");
 
   useEffect(() => {
-    const sections = navItems.map((item) => document.querySelector(item.href));
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 140;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
-          }
-        });
-      },
-      {
-        threshold: 0.4,
-      },
-    );
+      for (const item of navItems) {
+        const section = document.querySelector(item.href);
 
-    sections.forEach((section) => {
-      if (section) {
-        observer.observe(section);
+        if (!section) continue;
+
+        const offsetTop = (section as HTMLElement).offsetTop;
+
+        const offsetHeight = (section as HTMLElement).offsetHeight;
+
+        if (
+          scrollPosition >= offsetTop &&
+          scrollPosition < offsetTop + offsetHeight
+        ) {
+          setActiveSection(item.href);
+        }
       }
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
 
     return () => {
-      sections.forEach((section) => {
-        if (section) {
-          observer.unobserve(section);
-        }
-      });
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -95,7 +95,7 @@ function Navbar() {
                           isActive
                             ? "text-black"
                             : "text-black/60 hover:text-black"
-                        } `}
+                        }`}
                       >
                         {item.label}
 
@@ -165,6 +165,7 @@ function Navbar() {
             <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10rem] font-black tracking-[-0.08em] text-black/[0.03]">
               EK
             </div>
+
             <motion.nav
               initial={{
                 y: 40,

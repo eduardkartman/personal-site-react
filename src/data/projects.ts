@@ -14,7 +14,7 @@ export const projects = [
       "Task management application built with Java Spring MVC architecture.",
     image: "/project-2.png",
     technologies: ["Java", "Spring MVC", "HTML", "CSS"],
-    github: "https://github.com/eduardkartman",
+    github: "https://github.com/eduardkartman/ToDoApp",
   },
 
   {
@@ -23,7 +23,7 @@ export const projects = [
       "Modern banking simulation platform focused on JavaScript interactions and UI logic.",
     image: "/project-3.png",
     technologies: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/eduardkartman",
+    github: "https://github.com/eduardkartman/BankistWeb",
   },
 
   {
@@ -41,7 +41,7 @@ export const projects = [
       "Interactive JavaScript dice game focused on DOM manipulation and game logic.",
     image: "/project-5.png",
     technologies: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/eduardkartman",
+    github: "https://github.com/eduardkartman/Pig-Game",
   },
 
   {
@@ -50,7 +50,7 @@ export const projects = [
       "Workout tracking application with maps integration and geolocation features.",
     image: "/project-6.png",
     technologies: ["JavaScript", "Leaflet", "HTML", "CSS"],
-    github: "https://github.com/eduardkartman",
+    github: "https://github.com/eduardkartman/mapty",
   },
 
   {
@@ -76,17 +76,17 @@ export const projects = [
     description:
       "Travel-focused React application with modern responsive UI components.",
     image: "/project-9.png",
-    technologies: ["React", "JavaScript", "CSS"],
-    github: "https://github.com/eduardkartman",
+    technologies: ["React", "TypeScript", "CSS"],
+    github: "https://github.com/eduardkartman/travel-list",
   },
 
   {
-    title: "Eat 'n Split",
+    title: "Eat'n Split",
     description:
       "Expense splitting application built with reusable React components.",
     image: "/project-10.png",
-    technologies: ["React", "JavaScript", "CSS"],
-    github: "https://github.com/eduardkartman",
+    technologies: ["React", "TypeScript", "CSS"],
+    github: "https://github.com/eduardkartman/eat-n-split",
   },
 
   {
@@ -94,15 +94,15 @@ export const projects = [
     description:
       "Movie search and watchlist application using React state management.",
     image: "/project-11.png",
-    technologies: ["React", "JavaScript", "API"],
-    github: "https://github.com/eduardkartman",
+    technologies: ["React", "TypeScript", "API"],
+    github: "https://github.com/eduardkartman/eat-n-split",
   },
 
   {
     title: "Brasov Central Apartments",
     description: "Apartment booking platform currently under development.",
     image: "/project-12.png",
-    technologies: ["React", "PostgreSQL"],
-    github: "https://github.com/eduardkartman",
+    technologies: ["React", "PostgreSQL", "Next.js"],
+    github: "https://github.com/eduardkartman/brasov-central-apartments",
   },
 ];
